@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
         effects:true,
 })
 let vh = window.innerHeight / 100;
-gsap.fromTo('.psts-new',{ left:"-100%" },{ left: "0%", duration: 1,delay:.4});
+gsap.fromTo('.psts-new',{ marginTop:"-100%" },{ marginTop: "0%", duration: .4,delay:.4});
 gsap.fromTo('.PSTS-section',{ opacity:0 },{ opacity:1,delay:.3});
 gsap.fromTo('.vibor-left',{ left: "100%"},{ left: "0%",scrollTrigger:{trigger:'.set-3-psts',start:230*vh,end:"bottom bottom",scrub:true}});
 gsap.fromTo('.vibor-right',{ left: "-100%"},{ left: "0%",scrollTrigger:{trigger:'.set-3-psts',start:230*vh,end:"bottom bottom",scrub:true}});
