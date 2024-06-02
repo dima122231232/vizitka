@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     var currentURL = window.location.href;
                     var newURL = currentURL.replace("html/project.html", "html/psts.html");
                     window.location.href = newURL;
-                }, 3000)
+                }, 500)
             }
         });
         setTimeout(function() {
@@ -497,6 +497,6 @@ function psts(){
 }
 function pstsTeleport(){
     document.body.style.overflow = 'hidden';
-    gsap.fromTo('.PSTS',{ marginLeft:"0%" },{ marginLeft: "-100%", duration: 1});
+    gsap.fromTo('.PSTS',{ marginTop:"0%" },{ marginTop: "-100%", duration: .4});
     
 }
